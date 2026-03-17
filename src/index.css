@@ -153,6 +153,10 @@ body{
     .nav-btn{
         display: none;
     }
+    .hero{
+        padding: 70px 40px;
+         
+    }
     .hero-top{
         flex-direction: column;
         justify-content: flex-start;

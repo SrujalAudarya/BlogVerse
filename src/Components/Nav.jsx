@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-const Nav = ({isDark, toggleTheme}) => {
+const Nav = ({ isDark, toggleTheme }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isShowSearchModal, setShowSearchModal] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
+    <>
     <nav className='w-full px-[8%] lg:px-[12%] py-5 flex items-center justify-between bg-white dark:bg-black transition-colors duration-500 fixed top-0 left-0 z-[9999]'>
 
       <Link to='/' className='no-underline'>
@@ -58,7 +59,7 @@ const Nav = ({isDark, toggleTheme}) => {
 
       <div className='flex items-center space-x-4'>
         <i className='bi bi-search text-lg cursor-pointer text-black dark:text-white'
-         onClick={() => setShowSearchModal(true)}
+          onClick={() => setShowSearchModal(true)}
         ></i>
         <div onClick={toggleTheme} className='bg-gray-800 flex items-center p-1 rounded-full cursor-pointer'>
           {!isDark ? (
@@ -80,7 +81,46 @@ const Nav = ({isDark, toggleTheme}) => {
         </button>
       </div>
     </nav>
-  )
+
+    {
+    isMobileMenuOpen && (
+      <ul className='lg:button w-full bg-white dark:bg-black text-black dark:text-white px-[8%] pt-[100px] space-y-4 transition duration-300'>
+        <li className="hover:text-yellow-400 text-lg cursor-pointer">
+          <Link to="">
+            <i className="bi bi-house-door-fill mr-1">
+              Home
+            </i>
+          </Link>
+        </li>
+
+        <li className="hover:text-yellow-400 text-lg cursor-pointer">
+          <i className="bi bi-list-ul mr-1">
+            Categories
+          </i>
+        </li>
+
+        <li className="hover:text-yellow-400 text-lg cursor-pointer">
+          <i className="bi bi-clock-history mr-1">
+            Latest Posts
+          </i>
+        </li>
+
+        <li className="hover:text-yellow-400 text-lg cursor-pointer">
+          <i className="bi bi-tags mr-1">
+            Tags
+          </i>
+        </li>
+
+        <li className="hover:text-yellow-400 text-lg cursor-pointer">
+          <i className="bi bi-archive mr-1">
+            History
+          </i>
+        </li>
+      </ul>
+    )
+  }
+  </>
+  );
 }
 
-export default Nav
+export default Nav 
