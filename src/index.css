@@ -23,3 +23,15 @@ body{
     color: var(--text-color);
     font-family: var(--poppins-font);
 }
+
+.hero{
+    width: 100% !important;
+    height: 70vh;
+    background-image: url(assets/hero-slide-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+}

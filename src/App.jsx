@@ -31,8 +31,9 @@ function App(){
     <>
 <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-500'>
   <Nav isDark={isDark} toggleTheme={toggleTheme} />
-  <Index />
-  <Footer />
+  <Routes>
+    <Route path='/' element={<Index />} />
+  </Routes>
 </div>
     </>
   )
