@@ -4,14 +4,14 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// import topic1 from '../assets/topic-1.png'
-// import topic2 from '../assets/topic2.png'
-// import topic3 from '../assets/topic3.png'
-// import topic4 from '../assets/topic4.png'
-// import topic5 from '../assets/topic5.png'
-// import topic6 from '../assets/topic6.png'
-// import topic7 from '../assets/topic7.png'
-// import topic8 from '../assets/topic8.png'
+import topic1 from '../assets/topic-1.png'
+import topic2 from '../assets/topic-2.png'
+import topic3 from '../assets/topic-3.png'
+import topic4 from '../assets/topic-4.png'
+import topic5 from '../assets/topic-5.png'
+import topic6 from '../assets/topic-6.png'
+import topic7 from '../assets/topic-7.png'
+import topic8 from '../assets/topic-8.png'
 
 const Index = () => {
   const prevRef = useRef(null);
@@ -146,6 +146,56 @@ const Index = () => {
 
         <div ref={nextRef} className='swiper-button-next swiper-btn swiper-btn-next cursor-pointer'>
           <i className='bi bi-arrow-right'></i>
+        </div>
+      </div>
+
+      {/* Explore Topices */}
+      <div className='px-[8%] lg:px-[12%] explore-topic py-10 flex flex-col justify-center items-center'>
+        <h2 className='text-sm uppercase text-center tracking-widest mb-6 font-bold'>
+          Explore Trending Topics
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-4 w-[100%] lg:w-[80%]">
+          {/* Each topic item */}
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic1} className='w-7' alt="" />
+            <span className="font-medium text-xl">Technology</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic2} className='w-7' alt="" />
+            <span className="font-medium text-xl">Travel</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic3} className='w-7' alt="" />
+            <span className="font-medium text-xl">Sport</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic4} className='w-7' alt="" />
+            <span className="font-medium text-xl">Business</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic5} className='w-7' alt="" />
+            <span className="font-medium text-xl">Management</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic6} className='w-7' alt="" />
+            <span className="font-medium text-xl">Trends</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic7} className='w-7' alt="" />
+            <span className="font-medium text-xl">Startups</span>
+          </div>
+
+          <div className="topic-box flex items-center gap-2 px-6 py-2 bg-[#111] border border-gray-700 bg-gray-50/10 hover:bg-gray-50/15 rounded-full shadwo-shadow-md cursor-pointer transition">
+            <img src={topic8} className='w-7' alt="" />
+            <span className="font-medium text-xl">News</span>
+          </div>
         </div>
       </div>
     </>

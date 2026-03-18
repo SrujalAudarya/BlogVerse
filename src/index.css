@@ -166,3 +166,14 @@ body{
         font-size: 2rem;
     }
 }
+
+/* Explore Topics */
+
+.topic-box img{
+    filter: grayscale(100%);
+    transition: var(--transition-regular);
+}
+
+.topic-box:hover img{
+    filter: grayscale(0);
+}
