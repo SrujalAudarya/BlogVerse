@@ -5,6 +5,8 @@ import Footer from './Components/Footer'
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import Blog from './Components/Blog/Blog'
+import BlogDetails from './Components/Blog/BlogDetails'
 
 function App(){
   const [isDark, setIsDark] = useState(false);
@@ -32,7 +34,8 @@ function App(){
 <div className='bg-white dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-500'>
   <Nav isDark={isDark} toggleTheme={toggleTheme} />
   <Routes>
-    <Route path='/' element={<Index />} />
+    <Route path='/' element={<><Index /> <Blog/></>} />
+    <Route path='/blog:id' element={<BlogDetails/>} />
   </Routes>
   <Footer/>
 </div>
