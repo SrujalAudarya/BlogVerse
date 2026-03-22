@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React",
+    "author": "John Doe",
+    "date": "2026-03-01",
+    "tags": ["React", "JavaScript", "Frontend"],
+    "excerpt": "Learn the basics of React and how to build your first application using components and props.",
+    "buttonText": "Read More",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+  },
+  {
+    "id": 2,
+    "title": "Understanding Tailwind CSS",
+    "author": "Jane Smith",
+    "date": "2026-02-25",
+    "tags": ["CSS", "Tailwind", "Design"],
+    "excerpt": "Explore how Tailwind CSS helps you build modern UI faster with utility-first classes.",
+    "buttonText": "Explore",
+    "image": "https://images.unsplash.com/photo-1581276879432-15e50529f34b"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript ES6 Features",
+    "author": "Michael Lee",
+    "date": "2026-02-20",
+    "tags": ["JavaScript", "ES6"],
+    "excerpt": "A quick guide to modern JavaScript features like arrow functions, destructuring, and modules.",
+    "buttonText": "Learn More",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+  },
+  {
+    "id": 4,
+    "title": "Building Responsive Layouts",
+    "author": "Emily Davis",
+    "date": "2026-02-18",
+    "tags": ["Responsive", "CSS", "Web Design"],
+    "excerpt": "Understand how to create responsive layouts using Flexbox and Grid.",
+    "buttonText": "Read Article",
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8"
+  },
+  {
+    "id": 5,
+    "title": "State Management in React",
+    "author": "Chris Brown",
+    "date": "2026-02-10",
+    "tags": ["React", "State", "Redux"],
+    "excerpt": "Learn different ways to manage state in React applications including Context API and Redux.",
+    "buttonText": "Discover",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
+  },
+  {
+    "id": 6,
+    "title": "Deploying Your Web App",
+    "author": "Sophia Wilson",
+    "date": "2026-02-05",
+    "tags": ["Deployment", "Vercel", "Netlify"],
+    "excerpt": "Step-by-step guide to deploy your frontend applications easily using modern platforms.",
+    "buttonText": "Get Started",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  },
+  {
+    "id": 7,
+    "title": "Introduction to Node.js",
+    "author": "David Miller",
+    "date": "2026-01-30",
+    "tags": ["Node.js", "Backend"],
+    "excerpt": "Understand how Node.js works and how to build backend services using JavaScript.",
+    "buttonText": "Read More",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+  },
+  {
+    "id": 8,
+    "title": "Mastering Git and GitHub",
+    "author": "Olivia Taylor",
+    "date": "2026-01-25",
+    "tags": ["Git", "GitHub", "Version Control"],
+    "excerpt": "Learn how to manage your code efficiently using Git and collaborate using GitHub.",
+    "buttonText": "Explore",
+    "image": "https://images.unsplash.com/photo-1618401479427-c8ef9465c0f1"
+  },
+  {
+    "id": 9,
+    "title": "API Integration in React",
+    "author": "Daniel Anderson",
+    "date": "2026-01-20",
+    "tags": ["API", "React", "Axios"],
+    "excerpt": "Learn how to fetch and display data from APIs in your React applications.",
+    "buttonText": "Learn More",
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+  },
+  {
+    "id": 10,
+    "title": "Introduction to MongoDB",
+    "author": "Emma Thomas",
+    "date": "2026-01-15",
+    "tags": ["MongoDB", "Database", "NoSQL"],
+    "excerpt": "Get started with MongoDB and understand how NoSQL databases work.",
+    "buttonText": "Get Started",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d"
+  }
+]
