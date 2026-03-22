@@ -92,29 +92,33 @@ body{
     transform: scale(1.02);
 }
 
-.hero-top span{
+/* Reset default state */
+.hero-top span,
+.hero-bottom p,
+.hero-bottom h1,
+.hero-bottom button {
     opacity: 0;
-    animation: Anim-fade-left var(--transition-regular) 0.3s forwards linear;
 }
 
-.hero-bottom p:nth-of-type(1){
-    opacity: 0;
-    animation: Anim-fade-left var(--transition-regular)  0.5s forwards linear;
+/* Animate ONLY active slide */
+.swiper-slide-active .hero-top span {
+    animation: Anim-fade-left 0.6s 0.3s forwards linear;
 }
 
-.hero-bottom p:nth-of-type(2){
-    opacity: 0;
-    animation: Anim-fade-left var(--transition-regular)  0.9s forwards linear;
+.swiper-slide-active .hero-bottom p:nth-of-type(1) {
+    animation: Anim-fade-left 0.6s 0.5s forwards linear;
 }
 
-.hero-bottom h1{
-    opacity: 0;
-    animation: Anim-fade-left var(--transition-regular) 0.7s forwards linear;
+.swiper-slide-active .hero-bottom h1 {
+    animation: Anim-fade-left 0.6s 0.7s forwards linear;
 }
 
-.hero-bottom button{
-    opacity: 0;
-    animation: Anim-fade-left var(--transition-regular) 1s forwards linear;
+.swiper-slide-active .hero-bottom p:nth-of-type(2) {
+    animation: Anim-fade-left 0.6s 0.9s forwards linear;
+}
+
+.swiper-slide-active .hero-bottom button {
+    animation: Anim-fade-left 0.6s 1s forwards linear;
 }
 
 @keyframes Anim-fade-left {
