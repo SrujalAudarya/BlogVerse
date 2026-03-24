@@ -64,7 +64,7 @@ const Blog = () => {
           </div>
           <div className="w-full lg:w-4/12 sticky top-[80px] left-0 h-full">
             {/* box 1 */}
-            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4'>
+            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
               <span className='uppercase text-[14px]'>About</span>
               <div className="flex items-center gap-1 my-3">
                 <img src={about} className='w-16 rounded-full p-1' alt="" />
@@ -177,7 +177,7 @@ const Blog = () => {
               </SwiperSlide>
             </Swiper>
             {/* box 2 */}
-            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4'>
+            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
               <span className='uppercase text-[14px]'>Work Experience</span>
               <div className="flex flex-col my-3 border-b border-[#83838380] pb-4">
                 <div className="flex justify-between w-full">
@@ -196,11 +196,11 @@ const Blog = () => {
               </div>
             </div>
 
-            {/* box - 3 */}
-            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4'>
+            {/* box 3 */}
+            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
               <span className='uppercase text-[14px]'>Technologies</span>
               <div className="flex items-center gap-3 my-6">
-                <img src={figma} alt='' className='w-12 rounded-lg'/>
+                <img src={figma} alt='' className='w-12 rounded-lg' />
                 <div>
                   <h2 className='font-bold text-xl'>Figma</h2>
                   <p className="font-[300]">Collaborate and design interfaces real-time.</p>
@@ -208,7 +208,7 @@ const Blog = () => {
               </div>
 
               <div className="flex items-center gap-3 my-6">
-                <img src={notion} alt='' className='w-12 rounded-lg'/>
+                <img src={notion} alt='' className='w-12 rounded-lg' />
                 <div>
                   <h2 className='font-bold text-xl'>Notion</h2>
                   <p className="font-[300]">Organize, track, and collaborate on projects easily.</p>
@@ -216,11 +216,43 @@ const Blog = () => {
               </div>
 
               <div className="flex items-center gap-3 my-6">
-                <img src={AI} alt='' className='w-12 rounded-lg'/>
+                <img src={AI} alt='' className='w-12 rounded-lg' />
                 <div>
                   <h2 className='font-bold text-xl'>Illustrator</h2>
                   <p className="font-[300]">Create precise vector graphics and illustrations.</p>
                 </div>
+              </div>
+            </div>
+
+            {/* box 4 */}
+            <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
+              <span className='uppercase text-[14px]'>Creating</span>
+
+              <div className="my-5">
+                <h2 className="pb-2 font-bold text-xl hover:text-yellow-400 cursor-pointer transition">
+                  Heartfelt Reflections <i className="bi bi-box-arrow-in-up-right"></i>
+                </h2>
+                <p>
+                  A deep dive into emotional experiences and personal growth, sharing valuable insights on life's most meaningful moments.
+                </p>
+              </div>
+
+               <div className="my-5">
+                <h2 className="pb-2 font-bold text-xl hover:text-yellow-400 cursor-pointer transition">
+                  Latest Tech Gadgets <i className="bi bi-box-arrow-in-up-right"></i>
+                </h2>
+                <p>
+                  Explore the newest and most innovative technology products hitting the market, from smart devices to cutting-edge tools.
+                </p>
+              </div>
+
+              <div className="my-5">
+                <h2 className="pb-2 font-bold text-xl hover:text-yellow-400 cursor-pointer transition">
+                  Trends for 2025 <i className="bi bi-box-arrow-in-up-right"></i>
+                </h2>
+                <p>
+                  A look ahead at the emerging trends that will shape the world in 2024, from lifestyle shifts to groundbreaking innovations.
+                </p>
               </div>
             </div>
           </div>
