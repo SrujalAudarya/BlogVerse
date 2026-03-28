@@ -5,98 +5,148 @@
     "author": "John Doe",
     "date": "2026-03-01",
     "tags": ["React", "JavaScript", "Frontend"],
-    "excerpt": "Learn the basics of React and how to build your first application using components and props.",
+    "excerpt": "Learn the basics of React and how to build your first application.",
     "buttonText": "Read More",
-    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "content": [
+      { "type": "paragraph", "text": "React is a powerful JavaScript library for building user interfaces." },
+      { "type": "heading", "text": "Core Concepts" },
+      { "type": "list", "items": ["Components", "JSX", "Props", "State"] },
+      { "type": "paragraph", "text": "React makes UI development easier and scalable." }
+    ]
   },
+
   {
     "id": 2,
     "title": "Understanding Tailwind CSS",
     "author": "Jane Smith",
     "date": "2026-02-25",
-    "tags": ["CSS", "Tailwind", "Design"],
-    "excerpt": "Explore how Tailwind CSS helps you build modern UI faster with utility-first classes.",
+    "tags": ["CSS", "Tailwind"],
+    "excerpt": "Build modern UI faster using Tailwind.",
     "buttonText": "Explore",
-    "image": "https://images.unsplash.com/photo-1581276879432-15e50529f34b"
+    "image": "https://images.unsplash.com/photo-1581276879432-15e50529f34b",
+    "content": [
+      { "type": "paragraph", "text": "Tailwind CSS is a utility-first CSS framework." },
+      { "type": "heading", "text": "Why Tailwind?" },
+      { "type": "list", "items": ["Fast styling", "No custom CSS", "Highly customizable"] },
+      { "type": "paragraph", "text": "It helps developers build UI quickly." }
+    ]
   },
+
   {
     "id": 3,
     "title": "JavaScript ES6 Features",
     "author": "Michael Lee",
     "date": "2026-02-20",
     "tags": ["JavaScript", "ES6"],
-    "excerpt": "A quick guide to modern JavaScript features like arrow functions, destructuring, and modules.",
+    "excerpt": "Explore modern JavaScript features.",
     "buttonText": "Learn More",
-    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "content": [
+      { "type": "paragraph", "text": "ES6 introduced powerful features in JavaScript." },
+      { "type": "list", "items": ["Arrow Functions", "Destructuring", "Modules", "Let & Const"] },
+      { "type": "quote", "text": "Modern JS makes coding cleaner.", "author": "JS Dev" }
+    ]
   },
+
   {
     "id": 4,
     "title": "Building Responsive Layouts",
     "author": "Emily Davis",
     "date": "2026-02-18",
-    "tags": ["Responsive", "CSS", "Web Design"],
-    "excerpt": "Understand how to create responsive layouts using Flexbox and Grid.",
+    "tags": ["CSS", "Responsive"],
+    "excerpt": "Create responsive UI with Flexbox and Grid.",
     "buttonText": "Read Article",
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8"
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
+    "content": [
+      { "type": "paragraph", "text": "Responsive design ensures your app works on all devices." },
+      { "type": "list", "items": ["Flexbox", "Grid", "Media Queries"] }
+    ]
   },
+
   {
     "id": 5,
     "title": "State Management in React",
     "author": "Chris Brown",
     "date": "2026-02-10",
-    "tags": ["React", "State", "Redux"],
-    "excerpt": "Learn different ways to manage state in React applications including Context API and Redux.",
+    "tags": ["React", "Redux"],
+    "excerpt": "Manage state effectively in React.",
     "buttonText": "Discover",
-    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+    "content": [
+      { "type": "paragraph", "text": "State is the heart of any React app." },
+      { "type": "list", "items": ["useState", "Context API", "Redux"] }
+    ]
   },
+
   {
     "id": 6,
     "title": "Deploying Your Web App",
     "author": "Sophia Wilson",
     "date": "2026-02-05",
-    "tags": ["Deployment", "Vercel", "Netlify"],
-    "excerpt": "Step-by-step guide to deploy your frontend applications easily using modern platforms.",
+    "tags": ["Deployment"],
+    "excerpt": "Deploy your frontend apps easily.",
     "buttonText": "Get Started",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "content": [
+      { "type": "paragraph", "text": "Deployment is the final step in development." },
+      { "type": "list", "items": ["Vercel", "Netlify", "Firebase Hosting"] }
+    ]
   },
+
   {
     "id": 7,
     "title": "Introduction to Node.js",
     "author": "David Miller",
     "date": "2026-01-30",
-    "tags": ["Node.js", "Backend"],
-    "excerpt": "Understand how Node.js works and how to build backend services using JavaScript.",
+    "tags": ["Node.js"],
+    "excerpt": "Build backend using JavaScript.",
     "buttonText": "Read More",
-    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "content": [
+      { "type": "paragraph", "text": "Node.js allows JavaScript to run on server." }
+    ]
   },
+
   {
     "id": 8,
     "title": "Mastering Git and GitHub",
     "author": "Olivia Taylor",
     "date": "2026-01-25",
-    "tags": ["Git", "GitHub", "Version Control"],
-    "excerpt": "Learn how to manage your code efficiently using Git and collaborate using GitHub.",
+    "tags": ["Git", "GitHub"],
+    "excerpt": "Version control made easy.",
     "buttonText": "Explore",
-    "image": "https://tinyurl.com/328pafdm"
+    "image": "https://tinyurl.com/328pafdm",
+    "content": [
+      { "type": "paragraph", "text": "Git helps track code changes efficiently." }
+    ]
   },
+
   {
     "id": 9,
     "title": "API Integration in React",
     "author": "Daniel Anderson",
     "date": "2026-01-20",
-    "tags": ["API", "React", "Axios"],
-    "excerpt": "Learn how to fetch and display data from APIs in your React applications.",
+    "tags": ["API", "React"],
+    "excerpt": "Fetch API data in React.",
     "buttonText": "Learn More",
-    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+    "content": [
+      { "type": "paragraph", "text": "APIs connect frontend to backend." }
+    ]
   },
+
   {
     "id": 10,
     "title": "Introduction to MongoDB",
     "author": "Emma Thomas",
     "date": "2026-01-15",
-    "tags": ["MongoDB", "Database", "NoSQL"],
-    "excerpt": "Get started with MongoDB and understand how NoSQL databases work.",
+    "tags": ["MongoDB"],
+    "excerpt": "Learn NoSQL database basics.",
     "buttonText": "Get Started",
-    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d"
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "content": [
+      { "type": "paragraph", "text": "MongoDB is a NoSQL database storing data in JSON format." }
+    ]
   }
 ]

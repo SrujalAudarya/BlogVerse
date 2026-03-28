@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+import blogsData from "../Blogs.json";
+
 const Nav = ({ isDark, toggleTheme }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isShowSearchModal, setShowSearchModal] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+
+const filteredBlogs = blogsData.filter((blog) =>
+  blog.title.toLowerCase().includes(searchQuery.toLowerCase())
+);
 
   return (
     <>
@@ -25,7 +31,7 @@ const Nav = ({ isDark, toggleTheme }) => {
 
       <ul className="hidden nav-menu lg:flex items-center space-x-6 text-sm font-medium text-black dark:text-white">
         <li className="hover:text-yellow-400 text-lg cursor-pointer">
-          <Link to="">
+          <Link to="/">
             <i className="bi bi-house-door-fill mr-1">
               Home
             </i>
@@ -86,7 +92,7 @@ const Nav = ({ isDark, toggleTheme }) => {
     isMobileMenuOpen && (
       <ul className='lg:button w-full bg-white dark:bg-black text-black dark:text-white px-[8%] pt-[100px] space-y-4 transition duration-300'>
         <li className="hover:text-yellow-400 text-lg cursor-pointer">
-          <Link to="">
+          <Link to="/">
             <i className="bi bi-house-door-fill mr-1">
               Home
             </i>
@@ -119,6 +125,42 @@ const Nav = ({ isDark, toggleTheme }) => {
       </ul>
     )
   }
+
+  {isShowSearchModal && (
+    <div className="fixed inset-0 z-[99999] bg-black bg-opacity-60 flex justify-center items-center" style={{top:"-30%"}}>
+      <div className="bg-white dark:bg-black text-black dark:text-white border border-black shadow dark:border-white rounded-lg p-6 w-[90%] max-w-lg relative transition-all duration-300 animate-fadeInUp">
+        <button className="absolute top-3 right-4 text-xl text-black dark:text-white"
+        onClick={() => setShowSearchModal(false)}>
+          <i className="bi bi-x-lg"></i>
+        </button>
+
+        <h2 className="text-xl font-semibold mb-4">Search Blogs</h2>
+
+        <input 
+        type='text'
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder='Type your Search...'
+        className='w-full p-3 rounded-md border border-black dark:border-white bg-black dark:bg-white text-black dark:text-white focus:outline-none'
+        />
+
+        <div className="mt-4 space-y-3 max-h-60 overflow-y-auto">
+          {searchQuery.trim() !== '' ? (
+            filteredBlogs.length > 0 ? (
+              filteredBlogs.map((blog) => {
+                <Link
+                to={`/blogs/${blog.id}`}
+                key={blog.id}
+                className='flex items-center gap-4 p-3 rounded-md hover:bg-gray-200 dark:hover-bg-gray-800'>
+
+                </Link>
+              })
+            )
+          )}
+        </div>
+      </div>
+    </div>
+  )}
   </>
   );
 }

@@ -9,12 +9,7 @@ import 'swiper/css/navigation'
 
 import figma from '../../assets/figma.png'
 import notion from '../../assets/notion.png'
-import ps from '../../assets/ps.png'
 import AI from '../../assets/AI.png'
-
-import slide1 from '../../assets/mini-slide-1.png'
-import slide2 from '../../assets/mini-slide-2.png'
-import slide3 from '../../assets/mini-slide-3.png'
 
 import { Link } from 'react-router-dom';
 
@@ -62,6 +57,7 @@ const Blog = () => {
               ))
             }
           </div>
+          
           <div className="w-full lg:w-4/12 sticky top-[80px] left-0 h-full">
             {/* box 1 */}
             <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
@@ -99,77 +95,55 @@ const Blog = () => {
               }}
               className="rounded-md">
               <SwiperSlide>
-                <div
-                  className="relative h-[250px] rounded-xl overflow-hidden p-5 flex flex-col justify-between"
-                  style={{
-                    backgroundImage: `url(${slide1})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-
-                  <span className="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold text-white">
-                    Business
-                  </span>
-
-                  <div className="relative z-10 mt-auto">
+                <div className="mini-slide p-5 flex flex-col justify-between">
+                  <div>
+                    <span className="bg-gray-200/20 px-5 py-1 rounded-full font-bold hover:gray-200/30 cursor-pointer text-white">
+                      Business
+                    </span>
+                  </div>
+                  <div className="">
                     <p className="text-[#cdcdcd] text-sm">
                       <span className="text-white font-bold">Ethan Caldwell</span> on October 16, 2025
                     </p>
-                    <h1 className="text-white font-bold text-xl">
+                    <h1 className="text-white font-bold font-bricolage text-2xl my-1">
                       How Tech Shapes the Future of Work in 2025
                     </h1>
                   </div>
                 </div>
               </SwiperSlide>
+
               {/* slide 2 */}
               <SwiperSlide>
-                <div
-                  className="relative h-[250px] rounded-xl overflow-hidden p-5 flex flex-col justify-between"
-                  style={{
-                    backgroundImage: `url(${slide2})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-
-                  <span className="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold text-white">
-                    Sport
-                  </span>
-
-                  <div className="relative z-10 mt-auto">
+                <div className="mini-slide-2 mini-slide p-5 flex flex-col justify-between">
+                  <div>
+                    <span className="bg-gray-200/20 px-5 py-1 rounded-full font-bold hover:gray-200/30 cursor-pointer text-white">
+                      Sport
+                    </span>
+                  </div>
+                  <div className="">
                     <p className="text-[#cdcdcd] text-sm">
                       <span className="text-white font-bold">Ethan Caldwell</span> on September 29, 2025
                     </p>
-                    <h1 className="text-white font-bold text-xl">
+                    <h1 className="text-white font-bold font-bricolage text-2xl my-1">
                       The Future of Work: Tech and Remote Trends
                     </h1>
                   </div>
                 </div>
               </SwiperSlide>
+
               {/* slide 3 */}
               <SwiperSlide>
-                <div
-                  className="relative h-[250px] rounded-xl overflow-hidden p-5 flex flex-col justify-between"
-                  style={{
-                    backgroundImage: `url(${slide3})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/50"></div>
-
-                  <span className="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold text-white">
-                    Trends
-                  </span>
-
-                  <div className="relative z-10 mt-auto">
+                <div className="mini-slide-3 mini-slide p-5 flex flex-col justify-between">
+                  <div>
+                    <span className="bg-gray-200/20 px-5 py-1 rounded-full font-bold hover:gray-200/30 cursor-pointer text-white">
+                      Trends
+                    </span>
+                  </div>
+                  <div className="">
                     <p className="text-[#cdcdcd] text-sm">
                       <span className="text-white font-bold">Ethan Caldwell</span> on September 27, 2025
                     </p>
-                    <h1 className="text-white font-bold text-xl">
+                    <h1 className="text-white font-bold font-bricolage text-2xl my-1">
                       The Future of Work: Tech and Remote Trends
                     </h1>
                   </div>
@@ -194,7 +168,17 @@ const Blog = () => {
                 </div>
                 <p className='text-gray-400'>Pioneer</p>
               </div>
+              <div className="flex flex-col my-3 border-b border-[#83838380] pb-4"></div>
+
+              <div className="flex flex-col my-3">
+                <div className="flex justify-between w-full">
+                  <h2>Product Designer</h2>
+                  <h5>2022 - 2025</h5>
+                </div>
+                <p className='text-gray-400'>Pioneer</p>
+              </div>
             </div>
+
 
             {/* box 3 */}
             <div className='bg-gray-50/10 rounded-lg shadow-lg border border-[#83838380] p-4 mt-10'>
@@ -237,7 +221,7 @@ const Blog = () => {
                 </p>
               </div>
 
-               <div className="my-5">
+              <div className="my-5">
                 <h2 className="pb-2 font-bold text-xl hover:text-yellow-400 cursor-pointer transition">
                   Latest Tech Gadgets <i className="bi bi-box-arrow-in-up-right"></i>
                 </h2>

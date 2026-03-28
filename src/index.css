@@ -181,3 +181,51 @@ body{
 .topic-box:hover img{
     filter: grayscale(0);
 }
+
+.mini-slide{
+    background-image: url(assets/mini-slide-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    z-index: 5;
+}
+
+.mini-slide::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.mini-slide-2{
+    background-image: url(assets/mini-slide-2.png);
+}
+
+.mini-slide-3{
+    background-image: url(assets/mini-slide-3.png);
+}
+
+@media screen and (max-width:1199px) {
+    .blog-img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .mini-slide{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .mini-slide{
+        height: 100%;
+    }
+}

@@ -35,7 +35,7 @@ function App(){
   <Nav isDark={isDark} toggleTheme={toggleTheme} />
   <Routes>
     <Route path='/' element={<><Index /> <Blog/></>} />
-    <Route path='/blog:id' element={<BlogDetails/>} />
+    <Route path='/blog/:id' element={<BlogDetails/>} />
   </Routes>
   <Footer/>
 </div>
